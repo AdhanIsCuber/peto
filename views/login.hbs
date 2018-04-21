@@ -1,0 +1,54 @@
+<div id="login-page" class="columns">
+  <div class="column is-three-fifths welcome">
+    <div class="brand has-background-primary is-flex-centered">
+      <img src="/images/puzzle.svg" alt="pzzl">
+    </div>
+  </div>
+  <div class="column is-flex-centered">
+    <div class="column is-three-fifths">
+      <div class="field has-text-centered login_title">
+        <h3 class="has-text-primary">SIGN IN</h3>
+      </div>
+      <div class="field">
+        <label class="label">username</label>
+        <div class="control">
+          <input class="input is-primary is-rounded" type="text" placeholder="adhaniscuber">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">password</label>
+        <div class="control">
+          <input class="input is-primary is-rounded" type="password" placeholder="*****">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control has-text-centered">
+          <button class="button is-primary is-rounded btn-login">SIGN IN</button>
+        </div>
+        <div class="control has-text-centered">
+          <small>Dont have an account?</small>
+          <br>
+          <a href="#" class="has-text-primary modal-button" id="modal-signup-btn">Sign up here.</a>
+          {{> modal_signup}}
+        </div>
+      </div>
+    </div>
+    <div class="help-wrapper">
+      <div class="tabs is-small">
+        <ul>
+          <li>
+            <a>About</a>
+          </li>
+          <li class="">
+            <a>Helps</a>
+          </li>
+          <li>
+            <a>FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

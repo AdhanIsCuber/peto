@@ -1,0 +1,153 @@
+html,
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif; }
+
+p {
+  font-size: 12px; }
+
+.is-vert-centered {
+  display: flex;
+  align-items: center; }
+
+.is-hori-centered {
+  display: flex;
+  justify-content: center; }
+
+.is-flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.is-left {
+  display: flex;
+  justify-content: flex-end; }
+
+.is-right {
+  display: flex;
+  justify-content: flex-start; }
+
+.link {
+  color: #888; }
+  .link:hover {
+    color: #666; }
+
+#login-page {
+  margin: 0;
+  min-height: 100vh; }
+  #login-page .login_title {
+    margin-bottom: 2rem; }
+    #login-page .login_title h3 {
+      font-size: 24px; }
+  #login-page .welcome {
+    background-image: url("https://puxccbo05z-flywheel.netdna-ssl.com/wp-content/uploads/2015/02/red-panda-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 0; }
+  #login-page .brand {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    opacity: 0.95; }
+    #login-page .brand img {
+      max-width: 300px;
+      opacity: 0.5; }
+  #login-page .btn-login {
+    font-size: 14px;
+    font-weight: 400; }
+  #login-page .btn-signup {
+    font-size: 18px;
+    font-weight: 400; }
+  #login-page label {
+    font-size: 16px;
+    font-weight: 400; }
+  #login-page input {
+    font-size: 14px;
+    font-weight: 400; }
+  #login-page .help-wrapper {
+    position: fixed;
+    bottom: 5px; }
+    #login-page .help-wrapper .tabs ul {
+      border: none; }
+    #login-page .help-wrapper .tabs a:hover {
+      color: #00d1b2; }
+  #login-page .modal-signup button.delete {
+    position: absolute;
+    right: 0;
+    margin: .5rem; }
+  #login-page .modal-signup_background {
+    background-color: #ffffff22; }
+  #login-page .modal-signup_content {
+    box-shadow: 0 3px 8px 2.5px rgba(0, 0, 0, 0.1);
+    width: 35%; }
+    #login-page .modal-signup_content .box {
+      padding: 0; }
+  #login-page .signup {
+    padding: 2rem; }
+    #login-page .signup label.label {
+      font-size: 12px;
+      color: #4a4a4a; }
+    #login-page .signup_header {
+      text-align: center;
+      margin-bottom: 1rem; }
+    #login-page .signup_body {
+      text-align: left; }
+    #login-page .signup-input_et {
+      font-size: 14px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      padding-right: .5em; }
+    #login-page .signup_btn-wrapper {
+      padding-top: 2rem; }
+
+.main {
+  margin: 0 !important;
+  min-height: 100vh;
+  max-height: 100vh; }
+
+.timeline {
+  padding: 0 7.5rem;
+  background-color: #f2f5f7;
+  max-height: inherit;
+  overflow-y: auto; }
+
+.post {
+  margin: 0;
+  margin-top: 1rem; }
+  .post_avatar, .post_content {
+    padding: .5rem; }
+  .post_avatar .img-rounded {
+    border-radius: 500px; }
+  .post_box {
+    box-shadow: none; }
+    .post_box-reply {
+      background-color: #f2f5f7; }
+  .post_user {
+    padding-bottom: .5rem; }
+  .post_user-link {
+    font-size: 14px;
+    font-weight: 4000; }
+
+.post-box_footer {
+  margin-top: .5rem; }
+  .post-box_footer .ic-paw {
+    width: 20px;
+    height: 20px;
+    fill: #888; }
+    .post-box_footer .ic-paw:hover {
+      fill: #666; }
+  .post-box_footer .ic-paw-red {
+    fill: #f44336; }
+    .post-box_footer .ic-paw-red:hover {
+      fill: #e57373; }
+
+.post-box_action {
+  display: flex; }
+
+.post-box_menu {
+  display: flex;
+  align-items: center; }
+  .post-box_menu li {
+    padding: 0 .4rem; }

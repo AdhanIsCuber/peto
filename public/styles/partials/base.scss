@@ -1,0 +1,44 @@
+html,
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+p {
+  font-size: 12px;
+}
+
+.is-vert-centered {
+  display: flex;
+  align-items: center;
+}
+
+.is-hori-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.is-flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.is-right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link {
+  color: #888;
+  &:hover {
+    color: #666;
+  }
+}
