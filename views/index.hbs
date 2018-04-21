@@ -1,8 +1,14 @@
 <div class="columns main">
-  <div class="column is-one-quarter has-background-primary">
+  <div class="column is-one-quarter">
     {{> sidebar}}
   </div>
   <div class="column timeline">
-    {{> post}} {{> post}} {{> post}} {{> post}}
+    <div class="up-post">
+      {{> post_input}}
+    </div>
+    <div>
+      {{> post}} {{> post}} {{> post}} {{> post}}
+    </div>
   </div>
 </div>
+<div></div>

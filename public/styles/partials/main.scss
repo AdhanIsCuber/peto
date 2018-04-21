@@ -11,6 +11,38 @@
   overflow-y: auto;
 }
 
+.up-post {
+  min-height: 135px;
+}
+
+.post-input {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+  &_wrapper {
+    position: fixed;
+    top: 0;
+    margin: 0 !important;
+    padding-top: 1rem;
+    width: 55%;
+    background-color: #f2f5f7;
+    z-index: 30;
+  }
+  &_textarea {
+    min-height: 54px !important;
+    font-size: 12px;
+  }
+  &_file-label {
+    font-size: 12px;
+  }
+  &_btn-post {
+    font-weight: bold;
+  }
+  .filename {
+    font-size: 12px;
+  }
+}
+
 .post {
   margin: 0;
   margin-top: 1rem;
@@ -31,10 +63,17 @@
   }
   &_user {
     padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
   &_user-link {
     font-size: 14px;
     font-weight: 4000;
+  }
+  &_time {
+    font-size: 11px;
+    color: #bbb;
   }
 }
 

@@ -10,6 +10,14 @@ p {
   font-size: 12px;
 }
 
+a {
+  color: hsl(171, 100%, 41%);
+}
+
+.is-space-between {
+  justify-content: space-between;
+}
+
 .is-vert-centered {
   display: flex;
   align-items: center;

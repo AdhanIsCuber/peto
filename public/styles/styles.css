@@ -8,6 +8,12 @@ body {
 p {
   font-size: 12px; }
 
+a {
+  color: #00d1b2; }
+
+.is-space-between {
+  justify-content: space-between; }
+
 .is-vert-centered {
   display: flex;
   align-items: center; }
@@ -102,6 +108,14 @@ p {
     #login-page .signup_btn-wrapper {
       padding-top: 2rem; }
 
+.sidebar {
+  padding: 0; }
+  .sidebar .brand-peto {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+
 .main {
   margin: 0 !important;
   min-height: 100vh;
@@ -112,6 +126,31 @@ p {
   background-color: #f2f5f7;
   max-height: inherit;
   overflow-y: auto; }
+
+.up-post {
+  min-height: 135px; }
+
+.post-input {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: .5rem; }
+  .post-input_wrapper {
+    position: fixed;
+    top: 0;
+    margin: 0 !important;
+    padding-top: 1rem;
+    width: 55%;
+    background-color: #f2f5f7;
+    z-index: 30; }
+  .post-input_textarea {
+    min-height: 54px !important;
+    font-size: 12px; }
+  .post-input_file-label {
+    font-size: 12px; }
+  .post-input_btn-post {
+    font-weight: bold; }
+  .post-input .filename {
+    font-size: 12px; }
 
 .post {
   margin: 0;
@@ -125,10 +164,16 @@ p {
     .post_box-reply {
       background-color: #f2f5f7; }
   .post_user {
-    padding-bottom: .5rem; }
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
   .post_user-link {
     font-size: 14px;
     font-weight: 4000; }
+  .post_time {
+    font-size: 11px;
+    color: #bbb; }
 
 .post-box_footer {
   margin-top: .5rem; }
