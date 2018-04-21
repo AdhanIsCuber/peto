@@ -196,3 +196,11 @@ a {
   align-items: center; }
   .post-box_menu li {
     padding: 0 .4rem; }
+
+/* Small Devices, Tablets */
+/* PRIORITAS Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .timeline {
+    padding: 0 1rem; } }
+
+/* Custom, iPhone Retina */
