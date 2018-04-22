@@ -116,7 +116,8 @@ a {
     display: flex;
     justify-content: center; }
   .sidebar .user {
-    padding: 2rem; }
+    padding: 2rem;
+    text-align: center; }
     .sidebar .user_avatar {
       height: 150px;
       width: 150px;
@@ -132,6 +133,26 @@ a {
       font-size: 10px;
       text-align: center;
       color: #858585; }
+  .sidebar .pets {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center; }
+  .sidebar .pet_wrapper {
+    text-align: center; }
+    .sidebar .pet_wrapper h4 {
+      color: #00d1b2; }
+  .sidebar .pet_image {
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: 60px;
+    object-fit: cover;
+    height: 48px; }
+  .sidebar .pet_name {
+    text-align: center;
+    font-size: 12px; }
+  .sidebar .pet_age {
+    text-align: center;
+    font-size: 10px; }
   .sidebar .nav-bottom {
     position: fixed;
     bottom: 0;

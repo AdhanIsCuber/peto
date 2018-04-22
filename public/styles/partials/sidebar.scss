@@ -8,6 +8,7 @@
   }
   .user {
     padding: 2rem;
+    text-align: center;
     &_avatar {
       height: 150px;
       width: 150px;
@@ -25,6 +26,34 @@
       font-size: 10px;
       text-align: center;
       color: #858585;
+    }
+  }
+  .pets {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .pet {
+    &_wrapper {
+      text-align: center;
+      h4 {
+        color: hsl(171, 100%, 41%);
+      }
+    }
+    &_image {
+      max-width: 48px;
+      max-height: 48px;
+      border-radius: 60px;
+      object-fit: cover;
+      height: 48px;
+    }
+    &_name {
+      text-align: center;
+      font-size: 12px;
+    }
+    &_age {
+      text-align: center;
+      font-size: 10px;
     }
   }
   .nav-bottom {
