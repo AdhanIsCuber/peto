@@ -239,6 +239,13 @@ a {
   .post-box_menu li {
     padding: 0 .4rem; }
 
+.helps_brand {
+  height: 100px;
+  padding: 1rem; }
+
+.helps_content {
+  padding: 1rem 5rem; }
+
 /* Small Devices, Tablets */
 /* PRIORITAS Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
