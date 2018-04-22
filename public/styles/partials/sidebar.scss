@@ -6,4 +6,30 @@
     display: flex;
     justify-content: center;
   }
+  .user {
+    padding: 2rem;
+    &_avatar {
+      height: 150px;
+      width: 150px;
+      border-radius: 180px;
+      border: 1px solid #f2f5f7;
+      object-fit: cover;
+      box-shadow: 0 3px 8px 2.5px rgba(0, 0, 0, 0.1)
+    }
+    &_name {
+      font-size: 16px;
+      text-align: center;
+      color: hsl(171, 100%, 41%);
+    }
+    &_live {
+      font-size: 10px;
+      text-align: center;
+      color: #858585;
+    }
+  }
+  .nav-bottom {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+  }
 }

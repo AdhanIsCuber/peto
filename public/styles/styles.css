@@ -115,6 +115,27 @@ a {
     text-align: center;
     display: flex;
     justify-content: center; }
+  .sidebar .user {
+    padding: 2rem; }
+    .sidebar .user_avatar {
+      height: 150px;
+      width: 150px;
+      border-radius: 180px;
+      border: 1px solid #f2f5f7;
+      object-fit: cover;
+      box-shadow: 0 3px 8px 2.5px rgba(0, 0, 0, 0.1); }
+    .sidebar .user_name {
+      font-size: 16px;
+      text-align: center;
+      color: #00d1b2; }
+    .sidebar .user_live {
+      font-size: 10px;
+      text-align: center;
+      color: #858585; }
+  .sidebar .nav-bottom {
+    position: fixed;
+    bottom: 0;
+    width: inherit; }
 
 .main {
   margin: 0 !important;

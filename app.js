@@ -14,6 +14,7 @@ app.use('/bulma', express.static(__dirname + '/node_modules/bulma/css'));
 hbs.registerPartial('partial', fs.readFileSync(__dirname + '/views/index.hbs', 'utf8'));
 hbs.registerPartials(__dirname + '/views/base');
 hbs.registerPartials(__dirname + '/views/components');
+hbs.registerPartials(__dirname + '/views/dummy');
 
 app.use('/login', login);
 
