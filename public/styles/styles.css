@@ -246,6 +246,13 @@ a {
 .helps_content {
   padding: 1rem 5rem; }
 
+.account {
+  padding: 2rem;
+  background-color: #f2f5f7;
+  height: 100vh; }
+  .account_wrapper {
+    height: 75vh; }
+
 /* Small Devices, Tablets */
 /* PRIORITAS Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
