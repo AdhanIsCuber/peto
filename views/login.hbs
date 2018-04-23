@@ -9,23 +9,26 @@
       <div class="field has-text-centered login_title">
         <h3 class="has-text-primary">SIGN IN</h3>
       </div>
-      <div class="field">
-        <label class="label">username</label>
-        <div class="control">
-          <input class="input is-primary is-rounded" type="text" placeholder="adhaniscuber">
+      <form action="/login" method="POST">
+        <div class="field">
+          <label class="label">username</label>
+          <div class="control">
+            <input class="input is-primary is-rounded" type="text" required placeholder="adhaniscuber">
+          </div>
         </div>
-      </div>
-
-      <div class="field">
-        <label class="label">password</label>
-        <div class="control">
-          <input class="input is-primary is-rounded" type="password" placeholder="*****">
+        <div class="field">
+          <label class="label">password</label>
+          <div class="control">
+            <input class="input is-primary is-rounded" type="password" required placeholder="*****">
+          </div>
         </div>
-      </div>
-      <div class="field">
-        <div class="control has-text-centered">
-          <button class="button is-primary is-rounded btn-login">SIGN IN</button>
+        <div class="field">
+          <div class="control has-text-centered">
+            <button type="submit" class="button is-primary is-rounded btn-login">SIGN IN</button>
+          </div>
         </div>
+      </form>
+      <div class="field">
         <div class="control has-text-centered">
           <small>Dont have an account?</small>
           <br>
@@ -38,17 +41,16 @@
       <div class="tabs is-small">
         <ul>
           <li>
-            <a>About</a>
-          </li>
-          <li class="">
-            <a>Helps</a>
+            <a href="/helps#about">About</a>
           </li>
           <li>
-            <a>FAQ</a>
+            <a href="/helps">Helps</a>
+          </li>
+          <li>
+            <a href="/helps#faq">FAQ</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-
 </div>
