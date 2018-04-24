@@ -22,7 +22,7 @@
 <nav class="navbar nav-bottom" role="navigation" aria-label="dropdown navigation">
   <div class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="/helps" class="navbar-item">
         <span class="icon is-medium">
           <i class="fas fa-info-circle fa-lg"></i>
         </span>
@@ -30,16 +30,18 @@
     </div>
 
     <div class="navbar-end">
-      <a class="navbar-item">
+      <a href="/account" class="navbar-item">
         <span class="icon is-medium">
           <i class="fas fa-cog fa-lg"></i>
         </span>
       </a>
-      <a class="navbar-item">
-        <span class="icon is-medium">
-          <i class="fas fa-sign-out-alt fa-lg"></i>
-        </span>
-      </a>
+      <form action="/signout" method="post">
+        <button class="navbar-item">
+          <span class="icon is-medium">
+            <i class="fas fa-sign-out-alt fa-lg"></i>
+          </span>
+        </button>
+      </form>
     </div>
   </div>
 </nav>

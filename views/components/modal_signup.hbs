@@ -8,76 +8,73 @@
           <h4>Sign Up</h4>
           <small>Ready for sharing animal.</small>
         </div>
-        <div class="signup_body has-text-left">
-          <div class="field">
-            <label class="label">fullname</label>
-            <div class="field-body control is-horizontal">
-              <div class="field">
-                <input class="input is-rounded is-primary" type="text" placeholder="firstname">
-              </div>
-              <div class="field">
-                <input class="input is-rounded is-primary" type="text" placeholder="lastname">
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">username</label>
-            <div class="field-body control is-horizontal">
-              <div class="field">
-                <div class="field has-addons">
-                  <p class="control">
-                    <a class="button is-static signup-input_et">
-                      @
-                    </a>
-                  </p>
-                  <p class="control is-expanded">
-                    <input class="input is-rounded is-primary" type="text" placeholder="username">
-                  </p>
+        <form action="/signup" method="post">
+          <div class="signup_body has-text-left">
+            <div class="field">
+              <label class="label">fullname</label>
+              <div class="field-body control is-horizontal">
+                <div class="field">
+                  <input class="input is-rounded is-primary" type="text" name="firstname" required placeholder="firstname">
+                </div>
+                <div class="field">
+                  <input class="input is-rounded is-primary" type="text" name="lastname" placeholder="lastname">
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="field">
-            <label class="label">email</label>
             <div class="field">
-              <p class="control is-expanded">
-                <input class="input is-rounded is-primary" type="email" placeholder="adhaniscuber@gmail.com">
-              </p>
+              <label class="label">username</label>
+              <div class="field-body control is-horizontal">
+                <div class="field">
+                  <div class="field has-addons">
+                    <p class="control">
+                      <a class="button is-static signup-input_et">
+                        @
+                      </a>
+                    </p>
+                    <p class="control is-expanded">
+                      <input class="input is-rounded is-primary" type="text" name="username" required placeholder="username">
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="field">
-            <label class="label">password</label>
             <div class="field">
-              <p class="control is-expanded">
-                <input class="input is-rounded is-primary" type="password" placeholder="*****">
-              </p>
+              <label class="label">email</label>
+              <div class="field">
+                <p class="control is-expanded">
+                  <input class="input is-rounded is-primary" type="email" name="usermail" required placeholder="adhaniscuber@gmail.com">
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label">retype password</label>
             <div class="field">
-              <p class="control is-expanded">
-                <input class="input is-rounded is-primary" type="password" placeholder="******">
-              </p>
+              <label class="label">password</label>
+              <div class="field">
+                <p class="control is-expanded">
+                  <input class="input is-rounded is-primary" type="password" name="userpassword" required placeholder="*****">
+                </p>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">retype password</label>
+              <div class="field">
+                <p class="control is-expanded">
+                  <input class="input is-rounded is-primary" type="password" required placeholder="******">
+                </p>
+              </div>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input type="checkbox" required> I agree to the
+                <a href="#" class="has-text-primary">terms and conditions</a>
+              </label>
+            </div>
+            <div class="field signup_btn-wrapper">
+              <div class="control has-text-centered">
+                <button class="button is-primary is-rounded btn-signup">SIGN UP</button>
+              </div>
             </div>
           </div>
-
-          <div class="field">
-            <label class="checkbox">
-              <input type="checkbox"> I agree to the
-              <a href="#" class="has-text-primary">terms and conditions</a>
-            </label>
-          </div>
-
-          <div class="field signup_btn-wrapper">
-            <div class="control has-text-centered">
-              <button class="button is-primary is-rounded btn-signup">SIGN UP</button>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
