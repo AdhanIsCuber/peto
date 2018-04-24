@@ -1,4 +1,7 @@
 <div id="login-page" class="columns">
+  {{#if message}}
+  <div class="alert alert-danger">{{ message }} </div>
+  {{/if}}
   <div class="column is-three-fifths welcome">
     <div class="brand has-background-primary is-flex-centered">
       <img src="/images/puzzle.svg" alt="pzzl">
