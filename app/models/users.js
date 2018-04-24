@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs');
 
 var userSchema = mongoose.Schema({
-  peter: {
-    username: String,
+  user: {
     firstname: String,
     lastname: String,
+    username: String,
     usermail: String,
-    password: String
+    password: String,
   }
 });
 
@@ -21,4 +21,4 @@ userSchema.methods.validPassword = function (password) {
 };
 
 // create the model for users and expose it to our app
-module.exports = mongoose.model('user', userSchema);
+module.exports = mongoose.model('Users', userSchema);
