@@ -1,11 +1,8 @@
-const express = require('express');
-const account = express.Router();
-
-account.get('/', (req, res) => {
-  res.render('account', {
-    layout: './layouts/default'
+module.exports = (app, passport) => {
+  app.get('/account', (req, res) => {
+    res.render('account', {
+      layout: './layouts/default',
+      title: 'Account |'
+    });
   });
-});
-
-
-module.exports = account;
+}
