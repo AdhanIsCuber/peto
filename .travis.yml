@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "v8.11.1"
+sudo: false
+install:
+  - npm install
+  - npm prune
+  - npm run test
