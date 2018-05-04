@@ -60,5 +60,10 @@
     position: fixed;
     bottom: 0;
     width: inherit;
+    .btn-signout {
+      border: none;
+      background-color: #fff;
+      font-size: 1em;
+    }
   }
 }

@@ -9,7 +9,7 @@ p {
   font-size: 12px; }
 
 a {
-  color: #00d1b2; }
+  color: #00d1b1; }
 
 .is-space-between {
   justify-content: space-between; }
@@ -39,6 +39,11 @@ a {
   color: #888; }
   .link:hover {
     color: #666; }
+
+.nav-link {
+  color: #00d1b1; }
+  .nav-link:hover {
+    color: #0eb69d !important; }
 
 #login-page {
   margin: 0;
@@ -157,6 +162,10 @@ a {
     position: fixed;
     bottom: 0;
     width: inherit; }
+    .sidebar .nav-bottom .btn-signout {
+      border: none;
+      background-color: #fff;
+      font-size: 1em; }
 
 .main {
   margin: 0 !important;
@@ -181,7 +190,7 @@ a {
     top: 0;
     margin: 0 !important;
     padding-top: 1rem;
-    width: 55%;
+    width: calc(100% - (7.5rem * 2) - 25%);
     background-color: #f2f5f7;
     z-index: 30; }
   .post-input_textarea {

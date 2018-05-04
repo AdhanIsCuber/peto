@@ -49,6 +49,7 @@ hbs.registerPartials(__dirname + '/views/components');
 hbs.registerPartials(__dirname + '/views/dummy');
 
 require('./app/login')(app, passport);
+require('./app/account')(app, passport);
 
 app.listen(8000, (req, res) => {
   console.log('server peto on http://127.0.0.1:8000')

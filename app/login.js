@@ -8,7 +8,9 @@ module.exports = (app, passport) => {
 
   app.get('/login', (req, res) => {
     res.render('login', {
-      layout: './layouts/default'
+      layout: './layouts/default',
+      title: 'Login |',
+      user: req.user
     })
   })
 
@@ -24,7 +26,7 @@ module.exports = (app, passport) => {
     failureFlash: true // allow flash messages
   }));
 
-  app.get('/logout', (req, res) => {
+  app.post('/logout', (req, res) => {
     req.logout();
     res.redirect('/login');
   })
