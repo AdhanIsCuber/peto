@@ -3,9 +3,9 @@ const helps = express.Router();
 
 helps.get('/', (req, res) => {
   res.render('helps', {
-    layout: './layouts/default'
+    layout: './layouts/default',
+    title: 'Help |'
   })
 })
-
 
 module.exports = helps;

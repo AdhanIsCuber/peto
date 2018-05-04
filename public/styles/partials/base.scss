@@ -11,7 +11,7 @@ p {
 }
 
 a {
-  color: hsl(171, 100%, 41%);
+  color: #00d1b1;
 }
 
 .is-space-between {
@@ -48,5 +48,12 @@ a {
   color: #888;
   &:hover {
     color: #666;
+  }
+}
+
+.nav-link {
+  color: #00d1b1;
+  &:hover {
+    color: #0eb69d !important;
   }
 }
