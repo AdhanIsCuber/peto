@@ -8,14 +8,18 @@
 <div class="">
   <div class="user">
     <img src="http://stage48.net/wiki/images/thumb/6/67/KatoMinamiNIII2018.jpg/479px-KatoMinamiNIII2018.jpg" alt="" class="user_avatar">
-    <p class="user_name">Kato Minami</p>
-    <p class="user_live">Niigata, Japan</p>
+    <p class="user_name">
+      {{user.user.firstname}} {{user.user.lastname}}
+      <p class="user_live">
+        {{#if user.user.location}} {{user.user.location}} {{else}} Not Yet Config {{/if}}
+      </p>
   </div>
   <div class="pet_wrapper">
     <h4>PETS</h4>
   </div>
   <div class="columns pets is-multiline">
-    {{> pet}} {{> pet}} {{> pet}} {{> pet}} {{> pet}} {{> pet}}
+    {{> pet}} {{> pet}} {{> pet}} {{> pet}} {{> pet}} {{> pet}} {{user.user.firstname}} {{user.user.lastname}} {{user.user.firstname}}
+    {{user.user.lastname}}
   </div>
 
 </div>
@@ -36,7 +40,7 @@
         </span>
       </a>
       <form action="/signout" method="post">
-        <button class="navbar-item">
+        <button type="submit" class="navbar-item">
           <span class="icon is-medium">
             <i class="fas fa-sign-out-alt fa-lg"></i>
           </span>
