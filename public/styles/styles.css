@@ -207,7 +207,7 @@ a {
     font-size: 12px; }
   .post-input #img-preview {
     margin: 0 1rem;
-    max-height: 1.5rem;
+    max-height: 1.7rem;
     object-fit: fill;
     border-radius: 4px;
     cursor: pointer; }
@@ -269,9 +269,52 @@ a {
 .account {
   padding: 2rem;
   background-color: #f2f5f7;
-  height: 100vh; }
-  .account_wrapper {
-    height: 75vh; }
+  height: 100vh;
+  /* pet */ }
+  .account_box {
+    min-height: 75vh;
+    box-shadow: 1px 3px 4px rgba(10, 10, 10, 0.1); }
+  .account_profile {
+    border-right: 1px solid #eee;
+    box-sizing: border-box; }
+    .account_profile .change-btn {
+      border: none;
+      border-radius: 50px !important; }
+  .account_current-avatar {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+    box-shadow: 1px 3px 4px rgba(10, 10, 10, 0.1); }
+  .account_sub > .account_sub-wrapper {
+    border-right: 1px solid #eee;
+    box-sizing: border-box; }
+    .account_sub > .account_sub-wrapper:last-child {
+      border: none; }
+  .account_sub-wrapper {
+    padding: 1rem; }
+  .account input,
+  .account select {
+    border: none;
+    background-color: #00d1b211;
+    box-shadow: none;
+    font-size: 14px;
+    color: #555; }
+    .account input:focus,
+    .account select:focus {
+      border: 1px solid #00d1b2;
+      box-shadow: none; }
+  .account label {
+    font-size: 12px;
+    font-weight: 100;
+    color: #aaa; }
+  .account_pets .pet img {
+    height: 4rem;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100%; }
+  .account .change-password h3 {
+    padding-bottom: 1rem; }
 
 /* Small Devices, Tablets */
 /* PRIORITAS Extra Small Devices, Phones */

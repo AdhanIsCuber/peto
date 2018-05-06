@@ -2,7 +2,69 @@
   padding: 2rem;
   background-color: #f2f5f7;
   height: 100vh;
-  &_wrapper {
-    height: 75vh;
+  &_wrapper {}
+  &_box {
+    min-height: 75vh;
+    box-shadow: 1px 3px 4px rgba(10, 10, 10, .1)
+  }
+  &_profile {
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+    .change-btn {
+      border: none;
+      border-radius: 50px !important;
+    }
+  }
+  &_current-avatar {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100px;
+    box-shadow: 1px 3px 4px rgba(10, 10, 10, .1)
+  }
+  &_sub {
+    &>.account_sub-wrapper {
+      border-right: 1px solid #eee;
+      box-sizing: border-box;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+  &_sub-wrapper {
+    padding: 1rem;
+  }
+  input,
+  select {
+    border: none;
+    background-color: #00d1b211;
+    box-shadow: none;
+    font-size: 14px;
+    color: #555;
+    &:focus {
+      border: 1px solid #00d1b2;
+      box-shadow: none;
+    }
+  }
+  label {
+    font-size: 12px;
+    font-weight: 100;
+    color: #aaa;
+  }
+  /* pet */
+  &_pets {
+    .pet {
+      img {
+        height: 4rem;
+        border-radius: 50px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+  .change-password {
+    h3 {
+      padding-bottom: 1rem;
+    }
   }
 }
