@@ -54,6 +54,8 @@
     &_age {
       text-align: center;
       font-size: 10px;
+      color: #999;
+      line-height: 1;
     }
   }
   .nav-bottom {
@@ -64,6 +66,7 @@
       border: none;
       background-color: #fff;
       font-size: 1em;
+      cursor: pointer;
     }
   }
 }

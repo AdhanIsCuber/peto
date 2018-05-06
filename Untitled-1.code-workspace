@@ -1,0 +1,56 @@
+{
+  "user": {
+    "username": "adhaniscuber",
+    "firstname": "Wirya",
+    "lastname": "Ramadhan",
+    "usermail": "adhaniscuber@gmail.com",
+    "password": "h4shp4$$w0rdf0rl091n&4c7!v3",
+    "location": "DKI Jakarta",
+    "country": "Indonesia",
+    "user_avatar": "peto-adhaniscuber-avatar.jpg",
+    "user_pets_id": [
+      "pet_1",
+      "pet_2"
+    ],
+    "user_posts_id": [
+      123,
+      124,
+      125
+    ]
+  }
+}
+
+{
+  "post": {
+    "post_id": "123",
+    "post_avataruser": "",
+    "post_publisher": "",
+    "post_timestamp": "",
+    "post_content": "",
+    "post_image_url": "",
+    "post_reply": "",
+    "post_likes": "",
+    "post_report": "",
+    "post_tags": [
+      "shiro",
+      "meredith"
+    ]
+  }
+}
+
+{
+  "pet": {
+    "pet_id": "pet_1",
+    "pet_name": "shiro",
+    "pet_dob": "21-02-2003",
+    "pet_gender": "male", // male, female, undefined
+    "pet_species": "cat",
+    "pet_ras": "scotthis fold",
+    "pet_avatar": "peto-pet-pet_1.jpg",
+    "pet_owner": "adhansicuber",
+    "pet_tag_id": [
+      123,
+      124
+    ]
+  }
+}

@@ -157,7 +157,9 @@ a {
     font-size: 12px; }
   .sidebar .pet_age {
     text-align: center;
-    font-size: 10px; }
+    font-size: 10px;
+    color: #999;
+    line-height: 1; }
   .sidebar .nav-bottom {
     position: fixed;
     bottom: 0;
