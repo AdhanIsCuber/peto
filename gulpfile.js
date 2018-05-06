@@ -1,6 +1,15 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const browserSync = require('browser-sync').create();
+const util = require('gulp-util');
+
+var config = {
+  assetsDir: 'public/styles/',
+  sassPattern: 'public/styles/*.scss',
+  production: !!util.env.production
+};
+
+console.log(util.env.production);
 
 gulp.task('sass', () => {
   return gulp.src('public/styles/*.scss')
@@ -10,7 +19,7 @@ gulp.task('sass', () => {
 
 gulp.task('browser-sync', () => {
   browserSync.init({
-    proxy: "127.0.0.1:7000"
+    proxy: "127.0.0.1:8000"
   });
 });
 
