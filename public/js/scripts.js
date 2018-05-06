@@ -26,7 +26,7 @@ function readURL(input) {
     var reader = new FileReader();
 
     reader.onload = function (e) {
-      $('#blah').attr('src', e.target.result);
+      $('.img-preview').attr('src', e.target.result);
     }
 
     reader.readAsDataURL(input.files[0]);
@@ -35,4 +35,8 @@ function readURL(input) {
 
 $("#file").change(function () {
   readURL(this);
+});
+
+$("#img-preview").click(function () {
+  $(".modal-img-preview").addClass("is-active");
 });

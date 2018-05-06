@@ -167,7 +167,8 @@ a {
     .sidebar .nav-bottom .btn-signout {
       border: none;
       background-color: #fff;
-      font-size: 1em; }
+      font-size: 1em;
+      cursor: pointer; }
 
 .main {
   margin: 0 !important;
@@ -204,6 +205,14 @@ a {
     font-weight: bold; }
   .post-input .filename {
     font-size: 12px; }
+  .post-input #img-preview {
+    margin: 0 1rem;
+    max-height: 1.5rem;
+    object-fit: fill;
+    border-radius: 4px;
+    cursor: pointer; }
+  .post-input .img-preview {
+    object-fit: contain; }
 
 .post {
   margin: 0;

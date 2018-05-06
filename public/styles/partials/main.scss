@@ -41,6 +41,16 @@
   .filename {
     font-size: 12px;
   }
+  #img-preview {
+    margin: 0 1rem;
+    max-height: 1.5rem;
+    object-fit: fill;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .img-preview {
+    object-fit: contain;
+  }
 }
 
 .post {
