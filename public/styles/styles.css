@@ -167,7 +167,8 @@ a {
     .sidebar .nav-bottom .btn-signout {
       border: none;
       background-color: #fff;
-      font-size: 1em; }
+      font-size: 1em;
+      cursor: pointer; }
 
 .main {
   margin: 0 !important;

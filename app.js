@@ -7,7 +7,7 @@ const fs = require('fs');
 const hbs = require('hbs');
 const helper = require('handlebars-helpers')({
   hbs: hbs
-});;
+});
 
 const mongoose = require('mongoose');
 const passport = require('passport');
@@ -17,6 +17,8 @@ const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+
+const dictionary = require('./app/dictionary');
 
 const mlabPetoDB = process.env.MLAB_DATABASE_PETO;
 
@@ -50,6 +52,7 @@ hbs.registerPartials(__dirname + '/views/dummy');
 
 require('./app/login')(app, passport);
 require('./app/account')(app, passport);
+app.use('/dictionary', dictionary);
 
 app.listen(8000, (req, res) => {
   console.log('server peto on http://127.0.0.1:8000')
